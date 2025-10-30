@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+        function display() {
+            document.getElementById('data').innerHTML = <h2 style="color: blue;">Hii: ${name}</h2>;
+        }
+    </script>
+    <style>
+        form{
+            padding: 40px;
+        }
+        input{
+            font-size: x-large;
+            margin: 10px;
+        }
+        label{
+            font-size: xx-large;
+
+        }
+        select{
+            font-size: x-large;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Enter Name:</label>
+        <input type="text" id="name"> <br>
+        <label>Enter Admission No:</label>
+        <input type="text" id="Admission"> <br>
+        <label>Enter Roll No:</label>
+        <input type="text" id="Roll"> <br>
+        <label>Enter University Name:</label>
+        <input type="text" id="University"> <br>
+        <label>Enter College Name:</label>
+        <input type="text" id="College"> <br>
+        <label>Enter Branch Name:</label>
+        <select name="Branch" id="Branch">
+            <option value="CSE">CSE</option>
+            <option value="CSE">IT</option>
+            <option value="CSE">ECE</option>
+            <option value="CSE">EE</option>
+            <option value="CSE">ME</option>
+        </select> <br>
+        <label>Enter Skills:</label>
+        <input type="radio" id="skills">
+        <label>C++:</label>
+        <input type="radio" id="skills">Java
+        <label>C++:</label>
+        <input type="radio" id="skills">Python <br> <br>
+        <label>Python</label>
+        <button onclick="display()" type="button">DISPLAY</button>
+    </form>
+    <div id="data"></div>
+</body>
+</html>
